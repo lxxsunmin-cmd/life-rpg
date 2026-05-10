@@ -235,13 +235,13 @@ export default function LifeRPG() {
     <>
       <style>{css}</style>
       <div style={{ ...wrap, textAlign:"center", paddingTop:"2rem" }}>
+        <div style={{ fontSize:11, letterSpacing:4, color:"#9CA3AF", marginBottom:10 }}>하나의 생(生)</div>
+        <h1 style={{ fontSize:28, fontWeight:500, marginBottom:16 }}>인생 시뮬레이터</h1>
         <img
           src="/og-image.png"
           alt="하나의 생 인생 시뮬레이터"
-          style={{ width:"100%", maxWidth:480, borderRadius:14, marginBottom:28, display:"block", margin:"0 auto 28px" }}
+          style={{ width:"100%", maxWidth:480, borderRadius:14, display:"block", margin:"0 auto 20px" }}
         />
-        <div style={{ fontSize:11, letterSpacing:4, color:"#9CA3AF", marginBottom:10 }}>하나의 생(生)</div>
-        <h1 style={{ fontSize:28, fontWeight:500, marginBottom:14 }}>인생 시뮬레이터</h1>
         <p style={{ fontSize:14, color:"#6B7280", lineHeight:1.95, margin:"0 auto 32px", maxWidth:300 }}>
           당신은 어떤 삶을 살게 될까요.<br/>하나의 선택이 모든 것을 바꿉니다.
         </p>
