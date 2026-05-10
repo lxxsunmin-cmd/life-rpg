@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { CHAPTER_DATA, EVENTS, ENDING_TYPES } from "../lib/data";
+import { CHAPTER_DATA, EVENTS, ENDING_TYPES } from "./data";
 
 const SPOONS = {
   gold:   { label:"금수저", color:"#B45309", bg:"#FEF3C7", border:"#F59E0B", desc:"재벌가 자녀. 강남 대형 아파트, 해외여행 연 2회 이상, 유학, 개인 과외 다수. 돈 걱정은 평생 없음.", startStats:{ happiness:70, money:95, relation:60, pride:65 } },
@@ -234,10 +234,15 @@ export default function LifeRPG() {
   if (screen === "intro") return (
     <>
       <style>{css}</style>
-      <div style={{ ...wrap, textAlign:"center", paddingTop:"3.5rem" }}>
+      <div style={{ ...wrap, textAlign:"center", paddingTop:"2rem" }}>
+        <img
+          src="/og-image.png"
+          alt="하나의 생 인생 시뮬레이터"
+          style={{ width:"100%", maxWidth:480, borderRadius:14, marginBottom:28, display:"block", margin:"0 auto 28px" }}
+        />
         <div style={{ fontSize:11, letterSpacing:4, color:"#9CA3AF", marginBottom:10 }}>하나의 생(生)</div>
         <h1 style={{ fontSize:28, fontWeight:500, marginBottom:14 }}>인생 시뮬레이터</h1>
-        <p style={{ fontSize:14, color:"#6B7280", lineHeight:1.95, margin:"0 auto 40px", maxWidth:300 }}>
+        <p style={{ fontSize:14, color:"#6B7280", lineHeight:1.95, margin:"0 auto 32px", maxWidth:300 }}>
           당신은 어떤 삶을 살게 될까요.<br/>하나의 선택이 모든 것을 바꿉니다.
         </p>
         <button onClick={()=>setScreen("pick")} style={{ padding:"14px 44px", borderRadius:10, border:"1px solid #D1D5DB", background:"#fff", fontSize:15 }}>
